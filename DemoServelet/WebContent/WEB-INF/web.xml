@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<context-param>
+<param-name>url</param-name>
+<param-value>jdbc:mysql</param-value>
+</context-param>
+
+<context-param>
+<param-name>user</param-name>
+<param-value>Ayushi</param-value>
+</context-param>
+
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+			</welcome-file-list>
+			
+			<servlet>
+			  <servlet-name>s1</servlet-name>
+			  <servlet-class>com.tqpp.DemoServlets</servlet-class>
+			  
+			  <init-param>
+	<param-name>hello</param-name>
+	<param-value>world</param-value>
+	</init-param>
+			</servlet>
+			
+			
+			
+			
+			<servelet-mapping>
+			  <servelet-name>s1</servelet-name>
+			  <url-pattern>/Ayu</url-pattern>
+			</servelet-mapping>
+</web-app>
